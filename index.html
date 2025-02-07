@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Teste CRM RD Station</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> <!-- Link para o arquivo JS com a máscara -->
+    <script>
+        // Função para redirecionar após o envio do formulário
+        function redirectToThankYouPage(event) {
+            event.preventDefault();  // Evita o envio real do formulário
+            // Aqui você pode adicionar uma lógica de validação se necessário
+            window.location.href = 'página_pós_landing.html';  // Redireciona para a página pós-landing
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -15,11 +22,11 @@
         </header>
 
         <section class="form-container">
-            <form action="#" method="POST">
+            <form onsubmit="redirectToThankYouPage(event)">
                 <input type="text" name="nome" placeholder="Seu nome" required>
                 <input type="email" name="email" placeholder="Seu e-mail" required>
-                <input type="tel" name="telefone" id="telefone" placeholder="Seu telefone" required maxlength="15">
-                <input type="text" name="empresa" placeholder="Empresa" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="Seu telefone" required>
+                <input type="text" name="empresa" placeholder="Nome da empresa" required>
                 <button type="submit">Cadastrar</button>
             </form>
         </section>
