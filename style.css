@@ -103,6 +103,17 @@ footer p {
 }
 
 body {
-    padding-top: 50px; /* Ajuste o valor de 50px conforme necessário */
+    padding-top: 340px; /* ajuste o valor de 50px conforme necessário */
 }
+
+.logo-container {
+    text-align: center; /* Alinha a logo ao centro */
+    margin-bottom: 20px; /* Espaçamento abaixo da logo */
+}
+
+.logo {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
 
