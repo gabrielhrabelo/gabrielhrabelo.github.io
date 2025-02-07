@@ -1,0 +1,103 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e texto geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container com bordas arredondadas e fundo branco */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px; /* Bordas arredondadas maiores */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho */
+header h1 {
+    font-size: 2.5em;
+    color: #0066cc; /* Azul */
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Estilo do formulário */
+.form-container {
+    margin-bottom: 40px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #0066cc; /* Azul */
+    outline: none;
+}
+
+.form-container button {
+    background-color: #0066cc; /* Azul */
+    color: #fff;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #004b99; /* Azul mais escuro */
+}
+
+/* Rodapé */
+footer {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
